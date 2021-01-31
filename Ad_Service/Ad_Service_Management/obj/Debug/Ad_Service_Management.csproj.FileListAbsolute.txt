@@ -1,0 +1,10 @@
+F:\Projects\Ad_Service_Management\Ad_Service_Management\bin\Ad_Service_Management.dll
+F:\Projects\Ad_Service_Management\Ad_Service_Management\bin\Ad_Service_Management.pdb
+F:\Projects\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.dll
+F:\Projects\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.pdb
+F:\Projects\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.csprojResolveAssemblyReference.cache
+F:\Ad_Service_Management\Ad_Service_Management\bin\Ad_Service_Management.dll
+F:\Ad_Service_Management\Ad_Service_Management\bin\Ad_Service_Management.pdb
+F:\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.dll
+F:\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.pdb
+F:\Ad_Service_Management\Ad_Service_Management\obj\Debug\Ad_Service_Management.csprojResolveAssemblyReference.cache

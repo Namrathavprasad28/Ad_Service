@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{185BEE40-F948-42F5-915F-5A67E92C03B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ad_Service_Management</RootNamespace>
+    <AssemblyName>Ad_Service_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emails">
+      <HintPath>C:\Users\torus\Desktop\TargetUsers\TargetUsers\bin\Emails.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin_Home.aspx" />
+    <Content Include="Admin\Area.aspx" />
+    <Content Include="Admin\assets\css\bootstrap.css" />
+    <Content Include="Admin\assets\css\style-responsive.css" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\css\table-responsive.css" />
+    <Content Include="Admin\assets\css\to-do.css" />
+    <Content Include="Admin\assets\css\zabuto_calendar.css" />
+    <Content Include="Admin\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="Admin\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\assets\img\blog-bg.jpg" />
+    <Content Include="Admin\assets\img\checkbox-gray.png" />
+    <Content Include="Admin\assets\img\delete.jpg" />
+    <Content Include="Admin\assets\img\Edit-Website.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-01.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-02.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-03.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-04.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-05.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-06.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-07.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-08.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-09.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-10.jpg" />
+    <Content Include="Admin\assets\img\friends\fr-11.jpg" />
+    <Content Include="Admin\assets\img\instagram.jpg" />
+    <Content Include="Admin\assets\img\login-bg.jpg" />
+    <Content Include="Admin\assets\img\lorde.jpg" />
+    <Content Include="Admin\assets\img\mask.png" />
+    <Content Include="Admin\assets\img\ny.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port01.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port02.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port03.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port04.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port05.jpg" />
+    <Content Include="Admin\assets\img\portfolio\port06.jpg" />
+    <Content Include="Admin\assets\img\product.jpg" />
+    <Content Include="Admin\assets\img\product.png" />
+    <Content Include="Admin\assets\img\profile-01.jpg" />
+    <Content Include="Admin\assets\img\profile-02.jpg" />
+    <Content Include="Admin\assets\img\radio-gray.png" />
+    <Content Include="Admin\assets\img\ui-danro.jpg" />
+    <Content Include="Admin\assets\img\ui-divya.jpg" />
+    <Content Include="Admin\assets\img\ui-sam.jpg" />
+    <Content Include="Admin\assets\img\ui-sherman.jpg" />
+    <Content Include="Admin\assets\img\ui-zac.jpg" />
+    <Content Include="Admin\assets\img\weather.jpg" />
+    <Content Include="Admin\assets\img\zoom.png" />
+    <Content Include="Admin\assets\js\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="Admin\assets\js\bootstrap-switch.js" />
+    <Content Include="Admin\assets\js\bootstrap.min.js" />
+    <Content Include="Admin\assets\js\calendar-conf-events.js" />
+    <Content Include="Admin\assets\js\chart-master\Chart.js" />
+    <Content Include="Admin\assets\js\chartjs-conf.js" />
+    <Content Include="Admin\assets\js\common-scripts.js" />
+    <Content Include="Admin\assets\js\easy-pie-chart.js" />
+    <Content Include="Admin\assets\js\fancybox\jquery.fancybox.css" />
+    <Content Include="Admin\assets\js\fancybox\jquery.fancybox.js" />
+    <Content Include="Admin\assets\js\form-component.js" />
+    <Content Include="Admin\assets\js\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="Admin\assets\js\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Admin\assets\js\gritter-conf.js" />
+    <Content Include="Admin\assets\js\gritter\css\jquery.gritter.css" />
+    <Content Include="Admin\assets\js\gritter\css\jquery.gritter0.css" />
+    <Content Include="Admin\assets\js\gritter\images\gritter-light.png" />
+    <Content Include="Admin\assets\js\gritter\images\gritter-long.png" />
+    <Content Include="Admin\assets\js\gritter\images\gritter.png" />
+    <Content Include="Admin\assets\js\gritter\images\ie-spacer.gif" />
+    <Content Include="Admin\assets\js\gritter\js\jquery.gritter.js" />
+    <Content Include="Admin\assets\js\jquery-1.8.3.min.js" />
+    <Content Include="Admin\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
+    <Content Include="Admin\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="Admin\assets\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Admin\assets\js\jquery.backstretch.min.js" />
+    <Content Include="Admin\assets\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="Admin\assets\js\jquery.js" />
+    <Content Include="Admin\assets\js\jquery.nicescroll.js" />
+    <Content Include="Admin\assets\js\jquery.scrollTo.min.js" />
+    <Content Include="Admin\assets\js\jquery.sparkline.js" />
+    <Content Include="Admin\assets\js\jquery.tagsinput.js" />
+    <Content Include="Admin\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Admin\assets\js\morris-conf.js" />
+    <Content Include="Admin\assets\js\sparkline-chart.js" />
+    <Content Include="Admin\assets\js\tasks.js" />
+    <Content Include="Admin\assets\js\zabuto_calendar.js" />
+    <Content Include="Admin\assets\lineicons\fonts\linecons.svg" />
+    <Content Include="Admin\assets\lineicons\index.html" />
+    <Content Include="Admin\assets\lineicons\lte-ie7.js" />
+    <Content Include="Admin\assets\lineicons\style.css" />
+    <Content Include="Admin\City.aspx" />
+    <Content Include="Admin\css\bar.css" />
+    <Content Include="Admin\css\bootstrap.css" />
+    <Content Include="Admin\css\fontawesome-all.css" />
+    <Content Include="Admin\css\pignose.calender.css" />
+    <Content Include="Admin\css\simplyCountdown.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\css\style4.css" />
+    <Content Include="Admin\css\widgets.css" />
+    <Content Include="Admin\images\1.jpg" />
+    <Content Include="Admin\images\2.jpg" />
+    <Content Include="Admin\images\3.jpg" />
+    <Content Include="Admin\images\4.jpg" />
+    <Content Include="Admin\images\5.jpg" />
+    <Content Include="Admin\images\admin_icon.png" />
+    <Content Include="Admin\images\b1.jpg" />
+    <Content Include="Admin\images\ban1.jpg" />
+    <Content Include="Admin\images\ban2.jpg" />
+    <Content Include="Admin\images\ban3.jpg" />
+    <Content Include="Admin\images\ban4.jpg" />
+    <Content Include="Admin\images\ban5.jpg" />
+    <Content Include="Admin\images\ban6.jpg" />
+    <Content Include="Admin\images\c1.jpg" />
+    <Content Include="Admin\images\c2.jpg" />
+    <Content Include="Admin\images\c3.jpg" />
+    <Content Include="Admin\images\c4.jpg" />
+    <Content Include="Admin\images\clone.jpg" />
+    <Content Include="Admin\images\menu1.jpg" />
+    <Content Include="Admin\images\Preloader_2.gif" />
+    <Content Include="Admin\images\profile.jpg" />
+    <Content Include="Admin\images\salesman.ico" />
+    <Content Include="Admin\images\timer.jpg" />
+    <Content Include="Admin\js\amcharts.js" />
+    <Content Include="Admin\js\bootstrap.min.js" />
+    <Content Include="Admin\js\chart1.js" />
+    <Content Include="Admin\js\circle_bar.js" />
+    <Content Include="Admin\js\example.js" />
+    <Content Include="Admin\js\index.js" />
+    <Content Include="Admin\js\jquery-1.10.2.min.js" />
+    <Content Include="Admin\js\jquery-2.2.3.min.js" />
+    <Content Include="Admin\js\jquery.charts.js" />
+    <Content Include="Admin\js\kuma-gauge.jquery.js" />
+    <Content Include="Admin\js\modernizr.js" />
+    <Content Include="Admin\js\moment.min.js" />
+    <Content Include="Admin\js\percentage-circles.js" />
+    <Content Include="Admin\js\pignose.calender.js" />
+    <Content Include="Admin\js\prettymaps.js" />
+    <Content Include="Admin\js\raphael-min.js" />
+    <Content Include="Admin\js\rumcaJS.js" />
+    <Content Include="Admin\js\script.js" />
+    <Content Include="Admin\js\SimpleChart.js" />
+    <Content Include="Admin\js\simplyCountdown.js" />
+    <Content Include="Admin\js\skycons.js" />
+    <Content Include="Admin\Manage_Retailer.aspx" />
+    <Content Include="Admin\View_Retailers.aspx" />
+    <Content Include="Admin\View_Users.aspx" />
+    <Content Include="Admin\webfonts\fa-brands-400.svg" />
+    <Content Include="Admin\webfonts\fa-regular-400.svg" />
+    <Content Include="Admin\webfonts\fa-solid-900.svg" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="Admin\WebForm2.aspx" />
+    <Content Include="Comp\css\bar.css" />
+    <Content Include="Comp\css\bootstrap.css" />
+    <Content Include="Comp\css\fontawesome-all.css" />
+    <Content Include="Comp\css\pignose.calender.css" />
+    <Content Include="Comp\css\simplyCountdown.css" />
+    <Content Include="Comp\css\style.css" />
+    <Content Include="Comp\css\style4.css" />
+    <Content Include="Comp\css\widgets.css" />
+    <Content Include="Comp\Graph_Page.aspx" />
+    <Content Include="Comp\images\1.jpg" />
+    <Content Include="Comp\images\2.jpg" />
+    <Content Include="Comp\images\3.jpg" />
+    <Content Include="Comp\images\4.jpg" />
+    <Content Include="Comp\images\5.jpg" />
+    <Content Include="Comp\images\b1.jpg" />
+    <Content Include="Comp\images\ban1.jpg" />
+    <Content Include="Comp\images\ban2.jpg" />
+    <Content Include="Comp\images\ban3.jpg" />
+    <Content Include="Comp\images\ban4.jpg" />
+    <Content Include="Comp\images\ban5.jpg" />
+    <Content Include="Comp\images\ban6.jpg" />
+    <Content Include="Comp\images\c1.jpg" />
+    <Content Include="Comp\images\c2.jpg" />
+    <Content Include="Comp\images\c3.jpg" />
+    <Content Include="Comp\images\c4.jpg" />
+    <Content Include="Comp\images\clone.jpg" />
+    <Content Include="Comp\images\menu1.jpg" />
+    <Content Include="Comp\images\Preloader_2.gif" />
+    <Content Include="Comp\images\profile.jpg" />
+    <Content Include="Comp\images\timer.jpg" />
+    <Content Include="Comp\js\amcharts.js" />
+    <Content Include="Comp\js\bootstrap.min.js" />
+    <Content Include="Comp\js\chart1.js" />
+    <Content Include="Comp\js\circle_bar.js" />
+    <Content Include="Comp\js\example.js" />
+    <Content Include="Comp\js\index.js" />
+    <Content Include="Comp\js\jquery-2.2.3.min.js" />
+    <Content Include="Comp\js\jquery.charts.js" />
+    <Content Include="Comp\js\kuma-gauge.jquery.js" />
+    <Content Include="Comp\js\modernizr.js" />
+    <Content Include="Comp\js\moment.min.js" />
+    <Content Include="Comp\js\percentage-circles.js" />
+    <Content Include="Comp\js\pignose.calender.js" />
+    <Content Include="Comp\js\prettymaps.js" />
+    <Content Include="Comp\js\raphael-min.js" />
+    <Content Include="Comp\js\rumcaJS.js" />
+    <Content Include="Comp\js\script.js" />
+    <Content Include="Comp\js\SimpleChart.js" />
+    <Content Include="Comp\js\simplyCountdown.js" />
+    <Content Include="Comp\js\skycons.js" />
+    <Content Include="Comp\webfonts\fa-brands-400.svg" />
+    <Content Include="Comp\webfonts\fa-regular-400.svg" />
+    <Content Include="Comp\webfonts\fa-solid-900.svg" />
+    <Content Include="Retailer\assets\css\bootstrap.css" />
+    <Content Include="Retailer\assets\css\style-responsive.css" />
+    <Content Include="Retailer\assets\css\style.css" />
+    <Content Include="Retailer\assets\css\table-responsive.css" />
+    <Content Include="Retailer\assets\css\to-do.css" />
+    <Content Include="Retailer\assets\css\zabuto_calendar.css" />
+    <Content Include="Retailer\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="Retailer\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Retailer\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Retailer\assets\img\blog-bg.jpg" />
+    <Content Include="Retailer\assets\img\checkbox-gray.png" />
+    <Content Include="Retailer\assets\img\delete.jpg" />
+    <Content Include="Retailer\assets\img\Edit-Website.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-01.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-02.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-03.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-04.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-05.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-06.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-07.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-08.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-09.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-10.jpg" />
+    <Content Include="Retailer\assets\img\friends\fr-11.jpg" />
+    <Content Include="Retailer\assets\img\instagram.jpg" />
+    <Content Include="Retailer\assets\img\login-bg.jpg" />
+    <Content Include="Retailer\assets\img\lorde.jpg" />
+    <Content Include="Retailer\assets\img\mask.png" />
+    <Content Include="Retailer\assets\img\ny.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port01.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port02.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port03.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port04.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port05.jpg" />
+    <Content Include="Retailer\assets\img\portfolio\port06.jpg" />
+    <Content Include="Retailer\assets\img\product.jpg" />
+    <Content Include="Retailer\assets\img\product.png" />
+    <Content Include="Retailer\assets\img\profile-01.jpg" />
+    <Content Include="Retailer\assets\img\profile-02.jpg" />
+    <Content Include="Retailer\assets\img\radio-gray.png" />
+    <Content Include="Retailer\assets\img\ui-danro.jpg" />
+    <Content Include="Retailer\assets\img\ui-divya.jpg" />
+    <Content Include="Retailer\assets\img\ui-sam.jpg" />
+    <Content Include="Retailer\assets\img\ui-sherman.jpg" />
+    <Content Include="Retailer\assets\img\ui-zac.jpg" />
+    <Content Include="Retailer\assets\img\weather.jpg" />
+    <Content Include="Retailer\assets\img\zoom.png" />
+    <Content Include="Retailer\assets\js\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="Retailer\assets\js\bootstrap-switch.js" />
+    <Content Include="Retailer\assets\js\bootstrap.min.js" />
+    <Content Include="Retailer\assets\js\calendar-conf-events.js" />
+    <Content Include="Retailer\assets\js\chart-master\Chart.js" />
+    <Content Include="Retailer\assets\js\chartjs-conf.js" />
+    <Content Include="Retailer\assets\js\common-scripts.js" />
+    <Content Include="Retailer\assets\js\easy-pie-chart.js" />
+    <Content Include="Retailer\assets\js\fancybox\jquery.fancybox.css" />
+    <Content Include="Retailer\assets\js\fancybox\jquery.fancybox.js" />
+    <Content Include="Retailer\assets\js\form-component.js" />
+    <Content Include="Retailer\assets\js\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="Retailer\assets\js\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Retailer\assets\js\gritter-conf.js" />
+    <Content Include="Retailer\assets\js\gritter\css\jquery.gritter.css" />
+    <Content Include="Retailer\assets\js\gritter\css\jquery.gritter0.css" />
+    <Content Include="Retailer\assets\js\gritter\images\gritter-light.png" />
+    <Content Include="Retailer\assets\js\gritter\images\gritter-long.png" />
+    <Content Include="Retailer\assets\js\gritter\images\gritter.png" />
+    <Content Include="Retailer\assets\js\gritter\images\ie-spacer.gif" />
+    <Content Include="Retailer\assets\js\gritter\js\jquery.gritter.js" />
+    <Content Include="Retailer\assets\js\jquery-1.8.3.min.js" />
+    <Content Include="Retailer\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
+    <Content Include="Retailer\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="Retailer\assets\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Retailer\assets\js\jquery.backstretch.min.js" />
+    <Content Include="Retailer\assets\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="Retailer\assets\js\jquery.js" />
+    <Content Include="Retailer\assets\js\jquery.nicescroll.js" />
+    <Content Include="Retailer\assets\js\jquery.scrollTo.min.js" />
+    <Content Include="Retailer\assets\js\jquery.sparkline.js" />
+    <Content Include="Retailer\assets\js\jquery.tagsinput.js" />
+    <Content Include="Retailer\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Retailer\assets\js\morris-conf.js" />
+    <Content Include="Retailer\assets\js\sparkline-chart.js" />
+    <Content Include="Retailer\assets\js\tasks.js" />
+    <Content Include="Retailer\assets\js\zabuto_calendar.js" />
+    <Content Include="Retailer\assets\lineicons\fonts\linecons.svg" />
+    <Content Include="Retailer\assets\lineicons\index.html" />
+    <Content Include="Retailer\assets\lineicons\lte-ie7.js" />
+    <Content Include="Retailer\assets\lineicons\style.css" />
+    <Content Include="Retailer\Create_Ads.aspx" />
+    <Content Include="Retailer\css\bar.css" />
+    <Content Include="Retailer\css\bootstrap.css" />
+    <Content Include="Retailer\css\fontawesome-all.css" />
+    <Content Include="Retailer\css\pignose.calender.css" />
+    <Content Include="Retailer\css\simplyCountdown.css" />
+    <Content Include="Retailer\css\style.css" />
+    <Content Include="Retailer\css\style4.css" />
+    <Content Include="Retailer\css\widgets.css" />
+    <Content Include="Retailer\images\1.jpg" />
+    <Content Include="Retailer\images\2.jpg" />
+    <Content Include="Retailer\images\3.jpg" />
+    <Content Include="Retailer\images\4.jpg" />
+    <Content Include="Retailer\images\5.jpg" />
+    <Content Include="Retailer\images\b1.jpg" />
+    <Content Include="Retailer\images\ban1.jpg" />
+    <Content Include="Retailer\images\ban2.jpg" />
+    <Content Include="Retailer\images\ban3.jpg" />
+    <Content Include="Retailer\images\ban4.jpg" />
+    <Content Include="Retailer\images\ban5.jpg" />
+    <Content Include="Retailer\images\ban6.jpg" />
+    <Content Include="Retailer\images\c1.jpg" />
+    <Content Include="Retailer\images\c2.jpg" />
+    <Content Include="Retailer\images\c3.jpg" />
+    <Content Include="Retailer\images\c4.jpg" />
+    <Content Include="Retailer\images\clone.jpg" />
+    <Content Include="Retailer\images\menu1.jpg" />
+    <Content Include="Retailer\images\Preloader_2.gif" />
+    <Content Include="Retailer\images\profile.jpg" />
+    <Content Include="Retailer\images\retailers.jpg" />
+    <Content Include="Retailer\images\salesman.ico" />
+    <Content Include="Retailer\images\salesman.png" />
+    <Content Include="Retailer\images\timer.jpg" />
+    <Content Include="Retailer\js\amcharts.js" />
+    <Content Include="Retailer\js\bootstrap.min.js" />
+    <Content Include="Retailer\js\chart1.js" />
+    <Content Include="Retailer\js\circle_bar.js" />
+    <Content Include="Retailer\js\example.js" />
+    <Content Include="Retailer\js\index.js" />
+    <Content Include="Retailer\js\jquery-2.2.3.min.js" />
+    <Content Include="Retailer\js\jquery.charts.js" />
+    <Content Include="Retailer\js\kuma-gauge.jquery.js" />
+    <Content Include="Retailer\js\modernizr.js" />
+    <Content Include="Retailer\js\moment.min.js" />
+    <Content Include="Retailer\js\percentage-circles.js" />
+    <Content Include="Retailer\js\pignose.calender.js" />
+    <Content Include="Retailer\js\prettymaps.js" />
+    <Content Include="Retailer\js\raphael-min.js" />
+    <Content Include="Retailer\js\rumcaJS.js" />
+    <Content Include="Retailer\js\script.js" />
+    <Content Include="Retailer\js\SimpleChart.js" />
+    <Content Include="Retailer\js\simplyCountdown.js" />
+    <Content Include="Retailer\js\skycons.js" />
+    <Content Include="Retailer\Retailer_Account.aspx" />
+    <Content Include="Retailer\Retailer_Home.aspx" />
+    <Content Include="Retailer\Ret_Password.aspx" />
+    <Content Include="Retailer\Ret_Profile.aspx" />
+    <Content Include="Retailer\Video\vid2.mp4" />
+    <Content Include="Retailer\View_Ads.aspx" />
+    <Content Include="Retailer\webfonts\fa-brands-400.svg" />
+    <Content Include="Retailer\webfonts\fa-regular-400.svg" />
+    <Content Include="Retailer\webfonts\fa-solid-900.svg" />
+    <Content Include="User\Ads_List.aspx" />
+    <Content Include="User\assets\css\bootstrap.css" />
+    <Content Include="User\assets\css\style-responsive.css" />
+    <Content Include="User\assets\css\style.css" />
+    <Content Include="User\assets\css\table-responsive.css" />
+    <Content Include="User\assets\css\to-do.css" />
+    <Content Include="User\assets\css\zabuto_calendar.css" />
+    <Content Include="User\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="User\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="User\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="User\assets\img\blog-bg.jpg" />
+    <Content Include="User\assets\img\checkbox-gray.png" />
+    <Content Include="User\assets\img\delete.jpg" />
+    <Content Include="User\assets\img\Edit-Website.jpg" />
+    <Content Include="User\assets\img\friends\fr-01.jpg" />
+    <Content Include="User\assets\img\friends\fr-02.jpg" />
+    <Content Include="User\assets\img\friends\fr-03.jpg" />
+    <Content Include="User\assets\img\friends\fr-04.jpg" />
+    <Content Include="User\assets\img\friends\fr-05.jpg" />
+    <Content Include="User\assets\img\friends\fr-06.jpg" />
+    <Content Include="User\assets\img\friends\fr-07.jpg" />
+    <Content Include="User\assets\img\friends\fr-08.jpg" />
+    <Content Include="User\assets\img\friends\fr-09.jpg" />
+    <Content Include="User\assets\img\friends\fr-10.jpg" />
+    <Content Include="User\assets\img\friends\fr-11.jpg" />
+    <Content Include="User\assets\img\instagram.jpg" />
+    <Content Include="User\assets\img\login-bg.jpg" />
+    <Content Include="User\assets\img\lorde.jpg" />
+    <Content Include="User\assets\img\mask.png" />
+    <Content Include="User\assets\img\ny.jpg" />
+    <Content Include="User\assets\img\portfolio\port01.jpg" />
+    <Content Include="User\assets\img\portfolio\port02.jpg" />
+    <Content Include="User\assets\img\portfolio\port03.jpg" />
+    <Content Include="User\assets\img\portfolio\port04.jpg" />
+    <Content Include="User\assets\img\portfolio\port05.jpg" />
+    <Content Include="User\assets\img\portfolio\port06.jpg" />
+    <Content Include="User\assets\img\product.jpg" />
+    <Content Include="User\assets\img\product.png" />
+    <Content Include="User\assets\img\profile-01.jpg" />
+    <Content Include="User\assets\img\profile-02.jpg" />
+    <Content Include="User\assets\img\radio-gray.png" />
+    <Content Include="User\assets\img\ui-danro.jpg" />
+    <Content Include="User\assets\img\ui-divya.jpg" />
+    <Content Include="User\assets\img\ui-sam.jpg" />
+    <Content Include="User\assets\img\ui-sherman.jpg" />
+    <Content Include="User\assets\img\ui-zac.jpg" />
+    <Content Include="User\assets\img\user.png" />
+    <Content Include="User\assets\img\weather.jpg" />
+    <Content Include="User\assets\img\zoom.png" />
+    <Content Include="User\assets\js\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="User\assets\js\bootstrap-switch.js" />
+    <Content Include="User\assets\js\bootstrap.min.js" />
+    <Content Include="User\assets\js\calendar-conf-events.js" />
+    <Content Include="User\assets\js\chart-master\Chart.js" />
+    <Content Include="User\assets\js\chartjs-conf.js" />
+    <Content Include="User\assets\js\common-scripts.js" />
+    <Content Include="User\assets\js\easy-pie-chart.js" />
+    <Content Include="User\assets\js\fancybox\jquery.fancybox.css" />
+    <Content Include="User\assets\js\fancybox\jquery.fancybox.js" />
+    <Content Include="User\assets\js\form-component.js" />
+    <Content Include="User\assets\js\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="User\assets\js\fullcalendar\fullcalendar.min.js" />
+    <Content Include="User\assets\js\gritter-conf.js" />
+    <Content Include="User\assets\js\gritter\css\jquery.gritter.css" />
+    <Content Include="User\assets\js\gritter\css\jquery.gritter0.css" />
+    <Content Include="User\assets\js\gritter\images\gritter-light.png" />
+    <Content Include="User\assets\js\gritter\images\gritter-long.png" />
+    <Content Include="User\assets\js\gritter\images\gritter.png" />
+    <Content Include="User\assets\js\gritter\images\ie-spacer.gif" />
+    <Content Include="User\assets\js\gritter\js\jquery.gritter.js" />
+    <Content Include="User\assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
+    <Content Include="User\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="User\assets\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="User\assets\js\jquery.backstretch.min.js" />
+    <Content Include="User\assets\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="User\assets\js\jquery.js" />
+    <Content Include="User\assets\js\jquery.nicescroll.js" />
+    <Content Include="User\assets\js\jquery.scrollTo.min.js" />
+    <Content Include="User\assets\js\jquery.sparkline.js" />
+    <Content Include="User\assets\js\jquery.tagsinput.js" />
+    <Content Include="User\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="User\assets\js\morris-conf.js" />
+    <Content Include="User\assets\js\sparkline-chart.js" />
+    <Content Include="User\assets\js\tasks.js" />
+    <Content Include="User\assets\js\zabuto_calendar.js" />
+    <Content Include="User\assets\lineicons\fonts\linecons.svg" />
+    <Content Include="User\assets\lineicons\index.html" />
+    <Content Include="User\assets\lineicons\lte-ie7.js" />
+    <Content Include="User\assets\lineicons\style.css" />
+    <Content Include="User\css\bar.css" />
+    <Content Include="User\css\bootstrap.css" />
+    <Content Include="User\css\fontawesome-all.css" />
+    <Content Include="User\css\pignose.calender.css" />
+    <Content Include="User\css\simplyCountdown.css" />
+    <Content Include="User\css\style.css" />
+    <Content Include="User\css\style4.css" />
+    <Content Include="User\css\widgets.css" />
+    <Content Include="User\images\1.jpg" />
+    <Content Include="User\images\2.jpg" />
+    <Content Include="User\images\3.jpg" />
+    <Content Include="User\images\4.jpg" />
+    <Content Include="User\images\5.jpg" />
+    <Content Include="User\images\b1.jpg" />
+    <Content Include="User\images\ban1.jpg" />
+    <Content Include="User\images\ban2.jpg" />
+    <Content Include="User\images\ban3.jpg" />
+    <Content Include="User\images\ban4.jpg" />
+    <Content Include="User\images\ban5.jpg" />
+    <Content Include="User\images\ban6.jpg" />
+    <Content Include="User\images\c1.jpg" />
+    <Content Include="User\images\c2.jpg" />
+    <Content Include="User\images\c3.jpg" />
+    <Content Include="User\images\c4.jpg" />
+    <Content Include="User\images\clone.jpg" />
+    <Content Include="User\images\delete.jpg" />
+    <Content Include="User\images\Edit-Website.jpg" />
+    <Content Include="User\images\menu1.jpg" />
+    <Content Include="User\images\Preloader_2.gif" />
+    <Content Include="User\images\profile.jpg" />
+    <Content Include="User\images\salesman.ico" />
+    <Content Include="User\images\timer.jpg" />
+    <Content Include="User\js\amcharts.js" />
+    <Content Include="User\js\bootstrap.min.js" />
+    <Content Include="User\js\chart1.js" />
+    <Content Include="User\js\circle_bar.js" />
+    <Content Include="User\js\example.js" />
+    <Content Include="User\js\index.js" />
+    <Content Include="User\js\jquery-2.2.3.min.js" />
+    <Content Include="User\js\jquery.charts.js" />
+    <Content Include="User\js\kuma-gauge.jquery.js" />
+    <Content Include="User\js\modernizr.js" />
+    <Content Include="User\js\moment.min.js" />
+    <Content Include="User\js\percentage-circles.js" />
+    <Content Include="User\js\pignose.calender.js" />
+    <Content Include="User\js\prettymaps.js" />
+    <Content Include="User\js\raphael-min.js" />
+    <Content Include="User\js\rumcaJS.js" />
+    <Content Include="User\js\script.js" />
+    <Content Include="User\js\SimpleChart.js" />
+    <Content Include="User\js\simplyCountdown.js" />
+    <Content Include="User\js\skycons.js" />
+    <Content Include="User\Play_Ad.aspx" />
+    <Content Include="User\Share_Msg.aspx" />
+    <Content Include="User\User_Account.aspx" />
+    <Content Include="User\User_Home.aspx" />
+    <Content Include="User\User_Password.aspx" />
+    <Content Include="User\User_Profile.aspx" />
+    <Content Include="User\webfonts\fa-brands-400.svg" />
+    <Content Include="User\webfonts\fa-regular-400.svg" />
+    <Content Include="User\webfonts\fa-solid-900.svg" />
+    <Content Include="Visitor\css\bootstrap.css" />
+    <Content Include="Visitor\css\flexslider.css" />
+    <Content Include="Visitor\css\font-awesome.css" />
+    <Content Include="Visitor\css\JiSlider.css" />
+    <Content Include="Visitor\css\jquery.fatNav.css" />
+    <Content Include="Visitor\css\lightcase.css" />
+    <Content Include="Visitor\css\single.css" />
+    <Content Include="Visitor\css\style.css" />
+    <Content Include="Visitor\fonts\fontawesome-webfont.svg" />
+    <Content Include="Visitor\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Visitor\images\1.jpg" />
+    <Content Include="Visitor\images\1.png" />
+    <Content Include="Visitor\images\2.jpg" />
+    <Content Include="Visitor\images\2.png" />
+    <Content Include="Visitor\images\3.jpg" />
+    <Content Include="Visitor\images\3.png" />
+    <Content Include="Visitor\images\4.jpg" />
+    <Content Include="Visitor\images\5.jpg" />
+    <Content Include="Visitor\images\arr.png" />
+    <Content Include="Visitor\images\b1.jpg" />
+    <Content Include="Visitor\images\b2.jpg" />
+    <Content Include="Visitor\images\bg.jpg" />
+    <Content Include="Visitor\images\bg3.jpg" />
+    <Content Include="Visitor\images\bo1.jpg" />
+    <Content Include="Visitor\images\bo2.jpg" />
+    <Content Include="Visitor\images\bottom.jpg" />
+    <Content Include="Visitor\images\bottom2.jpg" />
+    <Content Include="Visitor\images\Capture05.jpg" />
+    <Content Include="Visitor\images\g1.jpg" />
+    <Content Include="Visitor\images\g2.jpg" />
+    <Content Include="Visitor\images\g3.jpg" />
+    <Content Include="Visitor\images\g4.jpg" />
+    <Content Include="Visitor\images\g5.jpg" />
+    <Content Include="Visitor\images\g6.jpg" />
+    <Content Include="Visitor\images\g7.jpg" />
+    <Content Include="Visitor\images\g8.jpg" />
+    <Content Include="Visitor\images\g9.jpg" />
+    <Content Include="Visitor\images\left.png" />
+    <Content Include="Visitor\images\n1.jpg" />
+    <Content Include="Visitor\images\n2.jpg" />
+    <Content Include="Visitor\images\n3.jpg" />
+    <Content Include="Visitor\images\right.png" />
+    <Content Include="Visitor\images\s1.jpg" />
+    <Content Include="Visitor\images\s2.jpg" />
+    <Content Include="Visitor\images\s3.jpg" />
+    <Content Include="Visitor\images\salesman.ico" />
+    <Content Include="Visitor\images\single.jpg" />
+    <Content Include="Visitor\images\t1.jpg" />
+    <Content Include="Visitor\images\t2.jpg" />
+    <Content Include="Visitor\images\t3.jpg" />
+    <Content Include="Visitor\images\t4.jpg" />
+    <Content Include="Visitor\img\Arjun-Sarja.jpg" />
+    <Content Include="Visitor\img\Ram-Charan.jpg" />
+    <Content Include="Visitor\Index.aspx" />
+    <Content Include="Visitor\js\bootstrap.js" />
+    <Content Include="Visitor\js\easing.js" />
+    <Content Include="Visitor\js\JiSlider.js" />
+    <Content Include="Visitor\js\jquery-2.1.4.min.js" />
+    <Content Include="Visitor\js\jquery.fatNav.js" />
+    <Content Include="Visitor\js\jquery.flexslider.js" />
+    <Content Include="Visitor\js\lightcase.js" />
+    <Content Include="Visitor\js\move-top.js" />
+    <Content Include="Visitor\js\SmoothScroll.min.js" />
+    <Content Include="Visitor\Login.aspx" />
+    <Content Include="Visitor\Login\css\font-awesome.min.css" />
+    <Content Include="Visitor\Login\css\style.css" />
+    <Content Include="Visitor\Login\images\b1.jpg" />
+    <Content Include="Visitor\Login\images\bg1.jpg" />
+    <Content Include="Visitor\Register\css\style.css" />
+    <Content Include="Visitor\Register\images\1.jpg" />
+    <Content Include="Visitor\Register\images\ad_img.png" />
+    <Content Include="Visitor\Register\images\Capture.PNG" />
+    <Content Include="Visitor\Register\images\Capture05.jpg" />
+    <Content Include="Visitor\Retailer_Reg.aspx" />
+    <Content Include="Visitor\User.aspx" />
+    <Content Include="Visitor\User_Register\css\font-awesome.css" />
+    <Content Include="Visitor\User_Register\css\style.css" />
+    <Content Include="Visitor\User_Register\fonts\fontawesome-webfont.svg" />
+    <Content Include="Visitor\User_Register\images\bg.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Home.aspx.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Home.aspx.designer.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Area.aspx.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Area.aspx.designer.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\City.aspx.cs">
+      <DependentUpon>City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\City.aspx.designer.cs">
+      <DependentUpon>City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage_Retailer.aspx.cs">
+      <DependentUpon>Manage_Retailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage_Retailer.aspx.designer.cs">
+      <DependentUpon>Manage_Retailer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_Retailers.aspx.cs">
+      <DependentUpon>View_Retailers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_Retailers.aspx.designer.cs">
+      <DependentUpon>View_Retailers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_Users.aspx.cs">
+      <DependentUpon>View_Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_Users.aspx.designer.cs">
+      <DependentUpon>View_Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppsCode\BLL.cs" />
+    <Compile Include="AppsCode\DataAccess.cs" />
+    <Compile Include="AppsCode\ParentComment.cs" />
+    <Compile Include="AppsCode\SqlConn.cs" />
+    <Compile Include="Comp\Comp.Master.cs">
+      <DependentUpon>Comp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comp\Comp.Master.designer.cs">
+      <DependentUpon>Comp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Comp\Graph_Page.aspx.cs">
+      <DependentUpon>Graph_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comp\Graph_Page.aspx.designer.cs">
+      <DependentUpon>Graph_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retailer\Create_Ads.aspx.cs">
+      <DependentUpon>Create_Ads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Create_Ads.aspx.designer.cs">
+      <DependentUpon>Create_Ads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\Retailer.Master.cs">
+      <DependentUpon>Retailer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Retailer.Master.designer.cs">
+      <DependentUpon>Retailer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\Retailer_Account.aspx.cs">
+      <DependentUpon>Retailer_Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Retailer_Account.aspx.designer.cs">
+      <DependentUpon>Retailer_Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\Retailer_Home.aspx.cs">
+      <DependentUpon>Retailer_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Retailer_Home.aspx.designer.cs">
+      <DependentUpon>Retailer_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\Ret_Password.aspx.cs">
+      <DependentUpon>Ret_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Ret_Password.aspx.designer.cs">
+      <DependentUpon>Ret_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\Ret_Profile.aspx.cs">
+      <DependentUpon>Ret_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\Ret_Profile.aspx.designer.cs">
+      <DependentUpon>Ret_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer\View_Ads.aspx.cs">
+      <DependentUpon>View_Ads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retailer\View_Ads.aspx.designer.cs">
+      <DependentUpon>View_Ads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Ads_List.aspx.cs">
+      <DependentUpon>Ads_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Ads_List.aspx.designer.cs">
+      <DependentUpon>Ads_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Play_Ad.aspx.cs">
+      <DependentUpon>Play_Ad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Play_Ad.aspx.designer.cs">
+      <DependentUpon>Play_Ad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Share_Msg.aspx.cs">
+      <DependentUpon>Share_Msg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Share_Msg.aspx.designer.cs">
+      <DependentUpon>Share_Msg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\User_Account.aspx.cs">
+      <DependentUpon>User_Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User_Account.aspx.designer.cs">
+      <DependentUpon>User_Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User_Home.aspx.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User_Home.aspx.designer.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User_Password.aspx.cs">
+      <DependentUpon>User_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User_Password.aspx.designer.cs">
+      <DependentUpon>User_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User_Profile.aspx.cs">
+      <DependentUpon>User_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User_Profile.aspx.designer.cs">
+      <DependentUpon>User_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Retailer_Reg.aspx.cs">
+      <DependentUpon>Retailer_Reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Retailer_Reg.aspx.designer.cs">
+      <DependentUpon>Retailer_Reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+    <None Include="Admin\assets\.DS_Store" />
+    <None Include="Admin\assets\css\.DS_Store" />
+    <None Include="Admin\assets\font-awesome\.DS_Store" />
+    <None Include="Admin\assets\font-awesome\css\.DS_Store" />
+    <None Include="Admin\assets\font-awesome\fonts\.DS_Store" />
+    <None Include="Admin\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="Admin\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="Admin\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="Admin\assets\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Admin\assets\fonts\.DS_Store" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Admin\assets\img\.DS_Store" />
+    <None Include="Admin\assets\img\friends\.DS_Store" />
+    <None Include="Admin\assets\img\portfolio\.DS_Store" />
+    <None Include="Admin\assets\js\.DS_Store" />
+    <None Include="Admin\assets\js\bootstrap-inputmask\.DS_Store" />
+    <None Include="Admin\assets\js\chart-master\.DS_Store" />
+    <None Include="Admin\assets\js\fancybox\.DS_Store" />
+    <None Include="Admin\assets\js\fullcalendar\.DS_Store" />
+    <None Include="Admin\assets\js\gritter\.DS_Store" />
+    <None Include="Admin\assets\js\gritter\css\.DS_Store" />
+    <None Include="Admin\assets\js\gritter\images\.DS_Store" />
+    <None Include="Admin\assets\js\gritter\js\.DS_Store" />
+    <None Include="Admin\assets\js\jquery-easy-pie-chart\.DS_Store" />
+    <None Include="Admin\assets\lineicons\.DS_Store" />
+    <None Include="Admin\assets\lineicons\fonts\.DS_Store" />
+    <None Include="Admin\assets\lineicons\fonts\linecons.eot" />
+    <None Include="Admin\assets\lineicons\fonts\linecons.ttf" />
+    <None Include="Admin\assets\lineicons\fonts\linecons.woff" />
+    <Content Include="Comp\Comp.Master" />
+    <None Include="Admin\images\Thumbs.db" />
+    <None Include="Admin\webfonts\fa-brands-400.eot" />
+    <None Include="Admin\webfonts\fa-brands-400.ttf" />
+    <None Include="Admin\webfonts\fa-brands-400.woff" />
+    <None Include="Admin\webfonts\fa-brands-400.woff2" />
+    <None Include="Admin\webfonts\fa-regular-400.eot" />
+    <None Include="Admin\webfonts\fa-regular-400.ttf" />
+    <None Include="Admin\webfonts\fa-regular-400.woff" />
+    <None Include="Admin\webfonts\fa-regular-400.woff2" />
+    <None Include="Admin\webfonts\fa-solid-900.eot" />
+    <None Include="Admin\webfonts\fa-solid-900.ttf" />
+    <None Include="Admin\webfonts\fa-solid-900.woff" />
+    <None Include="Admin\webfonts\fa-solid-900.woff2" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Comp\images\Thumbs.db" />
+    <None Include="Comp\webfonts\fa-brands-400.eot" />
+    <None Include="Comp\webfonts\fa-brands-400.ttf" />
+    <None Include="Comp\webfonts\fa-brands-400.woff" />
+    <None Include="Comp\webfonts\fa-brands-400.woff2" />
+    <None Include="Comp\webfonts\fa-regular-400.eot" />
+    <None Include="Comp\webfonts\fa-regular-400.ttf" />
+    <None Include="Comp\webfonts\fa-regular-400.woff" />
+    <None Include="Comp\webfonts\fa-regular-400.woff2" />
+    <None Include="Comp\webfonts\fa-solid-900.eot" />
+    <None Include="Comp\webfonts\fa-solid-900.ttf" />
+    <None Include="Comp\webfonts\fa-solid-900.woff" />
+    <None Include="Comp\webfonts\fa-solid-900.woff2" />
+    <None Include="Retailer\assets\.DS_Store" />
+    <None Include="Retailer\assets\css\.DS_Store" />
+    <None Include="Retailer\assets\font-awesome\.DS_Store" />
+    <None Include="Retailer\assets\font-awesome\css\.DS_Store" />
+    <None Include="Retailer\assets\font-awesome\fonts\.DS_Store" />
+    <None Include="Retailer\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="Retailer\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="Retailer\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="Retailer\assets\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Retailer\assets\fonts\.DS_Store" />
+    <None Include="Retailer\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Retailer\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Retailer\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Retailer\assets\img\.DS_Store" />
+    <None Include="Retailer\assets\img\friends\.DS_Store" />
+    <None Include="Retailer\assets\img\portfolio\.DS_Store" />
+    <None Include="Retailer\assets\js\.DS_Store" />
+    <None Include="Retailer\assets\js\bootstrap-inputmask\.DS_Store" />
+    <None Include="Retailer\assets\js\chart-master\.DS_Store" />
+    <None Include="Retailer\assets\js\fancybox\.DS_Store" />
+    <None Include="Retailer\assets\js\fullcalendar\.DS_Store" />
+    <None Include="Retailer\assets\js\gritter\.DS_Store" />
+    <None Include="Retailer\assets\js\gritter\css\.DS_Store" />
+    <None Include="Retailer\assets\js\gritter\images\.DS_Store" />
+    <None Include="Retailer\assets\js\gritter\js\.DS_Store" />
+    <None Include="Retailer\assets\js\jquery-easy-pie-chart\.DS_Store" />
+    <None Include="Retailer\assets\lineicons\.DS_Store" />
+    <None Include="Retailer\assets\lineicons\fonts\.DS_Store" />
+    <None Include="Retailer\assets\lineicons\fonts\linecons.eot" />
+    <None Include="Retailer\assets\lineicons\fonts\linecons.ttf" />
+    <None Include="Retailer\assets\lineicons\fonts\linecons.woff" />
+    <Content Include="Retailer\Retailer.Master" />
+    <None Include="Retailer\images\Thumbs.db" />
+    <None Include="Retailer\Video\boAt x Guru Randhawa.crdownload" />
+    <None Include="Retailer\webfonts\fa-brands-400.eot" />
+    <None Include="Retailer\webfonts\fa-brands-400.ttf" />
+    <None Include="Retailer\webfonts\fa-brands-400.woff" />
+    <None Include="Retailer\webfonts\fa-brands-400.woff2" />
+    <None Include="Retailer\webfonts\fa-regular-400.eot" />
+    <None Include="Retailer\webfonts\fa-regular-400.ttf" />
+    <None Include="Retailer\webfonts\fa-regular-400.woff" />
+    <None Include="Retailer\webfonts\fa-regular-400.woff2" />
+    <None Include="Retailer\webfonts\fa-solid-900.eot" />
+    <None Include="Retailer\webfonts\fa-solid-900.ttf" />
+    <None Include="Retailer\webfonts\fa-solid-900.woff" />
+    <None Include="Retailer\webfonts\fa-solid-900.woff2" />
+    <None Include="User\assets\.DS_Store" />
+    <None Include="User\assets\css\.DS_Store" />
+    <None Include="User\assets\font-awesome\.DS_Store" />
+    <None Include="User\assets\font-awesome\css\.DS_Store" />
+    <None Include="User\assets\font-awesome\fonts\.DS_Store" />
+    <None Include="User\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="User\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="User\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="User\assets\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="User\assets\fonts\.DS_Store" />
+    <None Include="User\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="User\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="User\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="User\assets\img\.DS_Store" />
+    <None Include="User\assets\img\friends\.DS_Store" />
+    <None Include="User\assets\img\portfolio\.DS_Store" />
+    <None Include="User\assets\js\.DS_Store" />
+    <None Include="User\assets\js\bootstrap-inputmask\.DS_Store" />
+    <None Include="User\assets\js\chart-master\.DS_Store" />
+    <None Include="User\assets\js\fancybox\.DS_Store" />
+    <None Include="User\assets\js\fullcalendar\.DS_Store" />
+    <None Include="User\assets\js\gritter\.DS_Store" />
+    <None Include="User\assets\js\gritter\css\.DS_Store" />
+    <None Include="User\assets\js\gritter\images\.DS_Store" />
+    <None Include="User\assets\js\gritter\js\.DS_Store" />
+    <None Include="User\assets\js\jquery-easy-pie-chart\.DS_Store" />
+    <None Include="User\assets\lineicons\.DS_Store" />
+    <None Include="User\assets\lineicons\fonts\.DS_Store" />
+    <None Include="User\assets\lineicons\fonts\linecons.eot" />
+    <None Include="User\assets\lineicons\fonts\linecons.ttf" />
+    <None Include="User\assets\lineicons\fonts\linecons.woff" />
+    <Content Include="User\User.Master" />
+    <None Include="User\images\Thumbs.db" />
+    <None Include="User\webfonts\fa-brands-400.eot" />
+    <None Include="User\webfonts\fa-brands-400.ttf" />
+    <None Include="User\webfonts\fa-brands-400.woff" />
+    <None Include="User\webfonts\fa-brands-400.woff2" />
+    <None Include="User\webfonts\fa-regular-400.eot" />
+    <None Include="User\webfonts\fa-regular-400.ttf" />
+    <None Include="User\webfonts\fa-regular-400.woff" />
+    <None Include="User\webfonts\fa-regular-400.woff2" />
+    <None Include="User\webfonts\fa-solid-900.eot" />
+    <None Include="User\webfonts\fa-solid-900.ttf" />
+    <None Include="User\webfonts\fa-solid-900.woff" />
+    <None Include="User\webfonts\fa-solid-900.woff2" />
+    <None Include="Visitor\fonts\fontawesome-webfont.eot" />
+    <None Include="Visitor\fonts\fontawesome-webfont.ttf" />
+    <None Include="Visitor\fonts\fontawesome-webfont.woff" />
+    <None Include="Visitor\fonts\fontawesome-webfont.woff2" />
+    <None Include="Visitor\fonts\FontAwesome.otf" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Visitor\Login\fonts\fontawesome-webfont.eot" />
+    <None Include="Visitor\Login\fonts\fontawesome-webfont.ttf" />
+    <None Include="Visitor\Login\fonts\fontawesome-webfont.woff" />
+    <None Include="Visitor\Login\fonts\fontawesome-webfont.woff2" />
+    <None Include="Visitor\Login\fonts\FontAwesome.otf" />
+    <None Include="Visitor\Register\fonts\Cabin-Regular.ttf" />
+    <None Include="Visitor\Register\fonts\Philosopher-Regular.ttf" />
+    <None Include="Visitor\Register\fonts\TitilliumWeb-Regular.ttf" />
+    <None Include="Visitor\User_Register\fonts\fontawesome-webfont.eot" />
+    <None Include="Visitor\User_Register\fonts\fontawesome-webfont.ttf" />
+    <None Include="Visitor\User_Register\fonts\fontawesome-webfont.woff" />
+    <None Include="Visitor\User_Register\fonts\fontawesome-webfont.woff2" />
+    <None Include="Visitor\User_Register\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="User\Video\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17349</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

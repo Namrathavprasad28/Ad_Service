@@ -1,0 +1,570 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Ad_Service_Management.Admin.Admin" %>
+
+<%--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>DASHGUM - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="#" class="logo"><b>AD SERVICE</b></a>
+            <!--logo end-->
+            
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="../Visitor/Index.aspx">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">Admin</h5>
+              	  	
+                  <li class="mt">
+                      <a href="Admin_Home.aspx">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="City.aspx" >
+                          <i class="fa fa-desktop"></i>
+                          <span>City</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="general.html">General</a></li>
+                          <li><a  href="buttons.html">Buttons</a></li>
+                          <li><a  href="panels.html">Panels</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="Area.aspx" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Area</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="calendar.html">Calendar</a></li>
+                          <li><a  href="gallery.html">Gallery</a></li>
+                          <li><a  href="todo_list.html">Todo List</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Retailer</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="Manage_Retailer.aspx">Manage Retailer</a></li>
+                          <li><a  href="View_Retailers.aspx">ViewRetailer</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="View_Users.aspx" >
+                          <i class="fa fa-tasks"></i>
+                          <span>View User</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="form_component.html">Form Components</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-th"></i>
+                          <span>Data Tables</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="basic_table.html">Basic Table</a></li>
+                          <li><a  href="responsive_table.html">Responsive Table</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="../Visitor/Index.aspx" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>Logout</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="morris.html">Morris</a></li>
+                          <li><a  href="chartjs.html">Chartjs</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper site-min-height">
+          
+          	<div class="row mt">
+          		<div class="col-lg-12">
+          		
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+          		</div>
+          	</div>
+			
+		</section><! --/wrapper -->
+      </section><!-- /MAIN CONTENT -->
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2018 - Alvarez.is
+              <a href="blank.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    
+  <script>
+      //custom select box
+
+      $(function () {
+          $('select.styled').customSelect();
+      });
+
+  </script>
+
+  </body>
+</html>--%>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/salesman.ico" />
+    <title>Ad Service</title>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Modernize Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta Tags -->
+
+    <!-- Style-sheets -->
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap Css -->
+    <!-- Common Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Common Css -->
+    <!-- Nav Css -->
+    <link rel="stylesheet" href="css/style4.css">
+    <!--// Nav Css -->
+    <!-- Fontawesome Css -->
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <!--// Fontawesome Css -->
+    <!--// Style-sheets -->
+
+    <!--web-fonts-->
+    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--//web-fonts-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h1>
+                    <a href="#">Ad Service</a>
+                </h1>
+                <span>M</span>
+            </div>
+            <div class="profile-bg"></div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Admin_Home.aspx">
+                        <i class="fas fa-th-large"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="City.aspx">
+                        <i class="fas fa-chart-pie"></i>
+                        City
+                    </a>
+                </li>
+                <li>
+                    <a href="Area.aspx">
+                        <i class="fas fa-laptop"></i>
+                        Area
+                    </a>
+                    <%--<ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="cards.html">Cards</a>
+                        </li>
+                        <li>
+                            <a href="carousels.html">Carousels</a>
+                        </li>
+                        <li>
+                            <a href="forms.html">Forms</a>
+                        </li>
+                        <li>
+                            <a href="modals.html">Modals</a>
+                        </li>
+                        <li>
+                            <a href="tables.html">Tables</a>
+                        </li>
+                    </ul>--%>
+                </li>
+                
+               <%--<li>
+                    <a href="Post_Comp_Image.aspx">
+                        <i class="fas fa-th"></i>
+                        Post Image Complaint
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false">
+                        <i class="far fa-file"></i>
+                        Pages
+                        <i class="fas fa-angle-down fa-pull-right"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+                        <li>
+                            <a href="404.html">404</a>
+                        </li>
+                        <li>
+                            <a href="500.html">500</a>
+                        </li>
+                        <li>
+                            <a href="blank.html">Blank</a>
+                        </li>
+                    </ul>
+                </li>--%>
+                <li>
+                    <a href="Manage_Retailer.aspx">
+                        <i class="far fa-envelope"></i>
+                        Manage Retailer
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="View_Retailers.aspx">
+                        <i class="far fa-window-restore"></i>
+                        View Retailer
+                    </a>
+                </li>
+                <li>
+                    <a href="View_Users.aspx">
+                        <i class="fas fa-table"></i>
+                        View User
+                    </a>
+                </li>
+                
+                <%--<li>
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-users"></i>
+                        User
+                        <i class="fas fa-angle-down fa-pull-right"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu3">
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                            <a href="forgot.html">Forgot password</a>
+                        </li>
+                    </ul>
+                </li>--%>
+                <li>
+                    <a href="../Visitor/Index.aspx">
+                        <i class="far fa-map"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!-- top-bar -->
+            <nav class="navbar navbar-default mb-xl-5 mb-4">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- Search-from -->
+                    <%--<form action="#" method="post" class="form-inline mx-auto search-form">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required="">
+                        <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+                    </form>--%>
+                    <!--// Search-from -->
+                    <ul class="top-icons-agileits-w3layouts float-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Manage_Retailer.aspx" id="navbarDropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                                <span class="badge"><asp:Label ID="Label2" runat="server"></asp:Label></span>
+                            </a>
+                            <%--<div class="dropdown-menu top-grid-scroll drop-1">
+                                <h3 class="sub-title-w3-agileits">User notifications</h3>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">John Doe</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>4 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Diana</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>6 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Steffie</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>12 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Jack</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>1 days ago</h6>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">view all notifications</a>
+                            </div>--%>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="View_Users.aspx" id="navbarDropdown1" role="button" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fas fa-spinner"></i>
+                                <span class="badge"><asp:Label ID="Label3" runat="server"></asp:Label></span>
+                            </a>
+                            <%--<div class="dropdown-menu top-grid-scroll drop-2">
+                                <h3 class="sub-title-w3-agileits">Shortcuts</h3>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-chart-pie mr-3"></i>Sed feugiat</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fab fa-connectdevelop mr-3"></i>Aliquam sed</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-tasks mr-3"></i>Lorem ipsum</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fab fa-superpowers mr-3"></i>Cras rutrum</h4>
+                                </a>
+                            </div>--%>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu drop-3">
+                                <div class="profile d-flex mr-o">
+                                    <div class="profile-l align-self-center">
+                                        <img src="images/admin_icon.png" class="img-fluid mb-3" alt="Responsive image">
+                                    </div>
+                                    <div class="profile-r align-self-center">
+                                        <h3 class="sub-title-w3-agileits"><asp:Label ID="Label1" runat="server" Text="Admin"></asp:Label></h3>
+                                        <%--<a href="#">info@example.com</a>--%>
+                                    </div>
+                                </div>
+                                <%--<a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-user mr-3"></i>My Profile</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-link mr-3"></i>Activity</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-envelope mr-3"></i>Messages</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-question-circle mr-3"></i>Faq</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-thumbs-up mr-3"></i>Support</h4>
+                                </a>--%>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../Visitor/Index.aspx">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--// top-bar -->
+
+            <!-- main-heading -->
+            <%--<h2 class="main-title-w3layouts mb-2 text-center">Blank page</h2>--%>
+            <!--// main-heading -->
+
+            <!-- Error Page Content -->
+            <div class="blank-page-content">
+
+                <!-- Error Page Info -->
+                <div class="outer-w3-agile mt-3">
+                   
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!--// Error Page Info -->
+
+            </div>
+
+            <!--// Error Page Content -->
+
+            <!-- Copyright -->
+            <%--<div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
+                <p>© 2018 Modernize . All Rights Reserved | Design by
+                    <a href="http://w3layouts.com/"> W3layouts </a>
+                </p>
+            </div>--%>
+            <!--// Copyright -->
+        </div>
+    </div>
+
+
+    <!-- Required common Js -->
+    <script src='js/jquery-2.2.3.min.js'></script>
+    <!-- //Required common Js -->
+
+    <!-- Sidebar-nav Js -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    <!--// Sidebar-nav Js -->
+
+    <!-- dropdown nav -->
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+
+    <!-- Js for bootstrap working-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- //Js for bootstrap working -->
+
+</body>
+
+</html>
+
+
+

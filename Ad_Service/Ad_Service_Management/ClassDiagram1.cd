@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ad_Service_Management.Admin.Admin">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Admin\Admin.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Admin.Area">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIEAAAAAAEAAggAAgAAAgAQAAAAQAAAAIAAgA=</HashCode>
+      <FileName>Admin\Area.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Admin.City">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEAAAAAAEAAAgAAgAAAAAQAAAAwAAAAIAAgA=</HashCode>
+      <FileName>Admin\City.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Admin.Manage_Retailer">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAgABgAAAAAYAAAAUAAAAIAAAA=</HashCode>
+      <FileName>Admin\Manage_Retailer.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.AppsCode.ParentComment" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppsCode\ParentComment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Retailer.Create_Ads">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAAAEAAAAAgAAgAAAAAQAAAAQAAAAIAAgA=</HashCode>
+      <FileName>Retailer\Create_Ads.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Retailer.Retailer_Account">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAgAAAgAAgAAAAAQAAAAUAAAAIAAAA=</HashCode>
+      <FileName>Retailer\Retailer_Account.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.User.Ads_List">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAAAAgABgQAAAAYAACAQAAAAIAAAA=</HashCode>
+      <FileName>User\Ads_List.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.User.Play_Ad">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEBAAAAAAAAAAgAAwAAAAQQAAAAQAAAAoAAAA=</HashCode>
+      <FileName>User\Play_Ad.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.User.User_Account">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAgAAAgAAgAAAAAQAAAAUAAAAIAAAA=</HashCode>
+      <FileName>User\User_Account.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.User.User_Profile">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAABAAAgADgAAAAAcAAAAQBAAAIgAgQ=</HashCode>
+      <FileName>User\User_Profile.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Visitor.Login">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAQAAAAIAAAA=</HashCode>
+      <FileName>Visitor\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Visitor.Retailer_Reg">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAAAAAAAgIAwgAAQgAAEAAQIAAAQBAQAJAAAQ=</HashCode>
+      <FileName>Visitor\Retailer_Reg.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ad_Service_Management.Visitor.User">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIAgggAAgAAAAAQAACAQAACAIAAAA=</HashCode>
+      <FileName>Visitor\User.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
